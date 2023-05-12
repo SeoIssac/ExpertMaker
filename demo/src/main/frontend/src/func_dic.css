@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    background-color: whitesmoke;
+    background-size: 1300px 800px;
+    background-position: center center;
+}
+h1{
+    font-family: 'GmarketSansMedium';
+    font-size: 70px;
+    font-weight: bolder;
+    text-align: center;
+}
+.text-container{
+    width: 1000px;
+    height: 3000px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    margin-left: 700px;
+}
+
+.search-box {
+    font-family: 'GmarketSansMedium';
+    font-size: 20px;
+    font-weight: 500;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.function-search-field {
+	height: 2rem;
+	width: 50%;
+	margin-right: 15px;
+	border: none !important;
+	padding: 5px !important;
+	border-bottom: 1px solid #cccccc !important;
+	outline: none;
+	background-color: #ffffff !important;
+    font-family: 'GmarketSansMedium';
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.search-box-label {
+    color: #fff;
+    background-color: #464646;
+    text-align: center;
+    border-radius: 1em;
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 5px;
+    font-family: 'GmarketSansMedium';
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.param {
+    font-size: 0.95em;
+    background: none repeat scroll 0 0 #464646;
+    color: white;
+    border: 2px solid #464646;
+    border-radius: 4px 4px 4px 4px;
+    margin: 0 5px 0 0;
+    padding: 1px 5px;
+    min-width: 25px;
+    display: inline-block;
+    text-align: center;
+}
+
+.param.optional {
+    background: none repeat scroll 0 0 #FAFAFA;
+    color: #2c2c2d;
+}
+
+li.function-list-item.row-2 {
+    background :#f8f8f8;
+}
+
+.function-name {
+    float: left;
+    width: 20%;
+    margin-left: 600px;
+}
+
+.function-summary {
+    float: left;
+    width: 45%;
+}
+
+.function-vars {
+    float: left;
+    width: 35%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.name-box, .summary-box, .vars-box {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.name-box a{
+    text-decoration: none;
+}
+
+.function-list-item:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.function-list-item {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#function-list-box ol{
+    list-style: none;
+    margin: 30px;
+}
+
+.func-cat {
+    font-weight: bold;    
+}
+
+@media screen and (max-width: 600px) {
+    .function-vars, .function-summary, .function-name {
+        width: 100%;
+        margin-top: 5px;
+    }
+    
+    .search-box-label {
+        display: none;
+    }
+    
+    #function-list-box ol{
+        margin: 10px;
+    }
+
+    .function-search-field {
+        width: 80%;
+        
+    }
+}
