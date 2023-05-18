@@ -13,8 +13,7 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="fd5adca9-30a9-42c4-a268-b0775f42b468">
-      <console name="expertname" type="STANDARD" schema="expertname" session="Main"><![CDATA[delete from `Questions`;
-alter table Questions Auto_Increment = 1;]]></console>
+      <console name="expertname" type="STANDARD" schema="expertname" session="Main"><![CDATA[select * from `Questions`;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -31,7 +30,6 @@ alter table Questions Auto_Increment = 1;]]></console>
   </component>
   <component name="DBNavigator.Project.FileConnectionMappingManager">
     <mapping file-url="file://$PROJECT_DIR$/demo/src/main/DB/Questions_insertion.sql" connection-id="fd5adca9-30a9-42c4-a268-b0775f42b468" session-id="MAIN" current-schema="expertname" />
-    <mapping file-url="file://$PROJECT_DIR$/demo/src/main/DB/table_insertion.sql" connection-id="fd5adca9-30a9-42c4-a268-b0775f42b468" session-id="MAIN" current-schema="expertname" />
   </component>
   <component name="DBNavigator.Project.MethodExecutionManager">
     <method-browser />
