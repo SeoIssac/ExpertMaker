@@ -72,3 +72,22 @@ task installReact(type: Exec) {
 		commandLine 'npm', 'install'
 	}
 }
+
+tasks.named("bootJar") {
+	archiveClassifier = 'boot'
+	mainClass = 'ExpertMaker.demo.EfssApplication'
+	manifest {
+		attributes 'Start-Class': 'ExpertMaker.demo.EfssApplication'
+	}
+	duplicatesStrategy = org.gradle.api.file.DuplicatesStrategy.INCLUDE
+}
+
+tasks.named("jar") {
+	archiveClassifier = ''
+	enabled = false
+	duplicatesStrategy = org.gradle.api.file.DuplicatesStrategy.INCLUDE
+}
+
+springBoot {
+	mainClass = 'ExpertMaker.demo.EfssApplication'
+}
