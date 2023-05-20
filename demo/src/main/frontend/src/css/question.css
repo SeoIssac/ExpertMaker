@@ -24,13 +24,16 @@
     font-size: 24px;
     font-weight: 300;
 }
-.board > input{
+.board > input {
     font-family: 'GmarketSansMedium';
     font-size: 20px;
     font-weight: normal;
-    height: 300px;
-    width: 1000px;
+}
 
+.board > button{
+    font-family: 'GmarketSansMedium';
+    font-size: 20px;
+    font-weight: normal;
 }
 #answer {
     width: 800px;
