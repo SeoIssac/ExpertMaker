@@ -18,7 +18,7 @@
     font-family: 'GmarketSansMedium';
     font-size: 48px;
     font-weight: 500;
-        }
+}
 .board > p{
     font-family: 'GmarketSansMedium';
     font-size: 24px;
@@ -44,7 +44,7 @@
 }
 
 .full-board {
-    background-color: #B3E7C3;
+    background-color: #94C1A2;
 }
 
 .half-boards {
