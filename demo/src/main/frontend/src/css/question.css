@@ -14,6 +14,16 @@
     margin: 0;
     padding: 10px;
 }
+.board > h1{
+    font-family: 'GmarketSansMedium';
+    font-size: 48px;
+    font-weight: 500;
+        }
+.board > p{
+    font-family: 'GmarketSansMedium';
+    font-size: 24px;
+    font-weight: 300;
+}
 
 .full-board {
     background-color: #B3E7C3;
