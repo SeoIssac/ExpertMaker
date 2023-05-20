@@ -4,11 +4,28 @@
     font-weight: normal;
     font-style: normal;
 }
-
-body{
-    background-color: #B3E7C3;
-    background-size: 1300px 800px;
-    background-position: center center;
+.container {
+    display: flex;
+    height: 100vh;
 }
-h1{}
-h2{}
+
+.board {
+    flex: 1;
+    margin: 0;
+    padding: 10px;
+}
+
+.full-board {
+    background-color: #B3E7C3;
+}
+
+.half-boards {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.half-boards .board {
+    flex: 1;
+    background-color: #e0e0e0;
+}
