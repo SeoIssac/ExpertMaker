@@ -12,9 +12,8 @@
     <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
-    <connection id="2c321c56-1cd7-49e9-b4d9-33b58abef3b7">
-      <console name="Excel_Study" type="STANDARD" schema="excel_study" session="Main"><![CDATA[use excel_study
-select * from questions]]></console>
+    <connection id="fd5adca9-30a9-42c4-a268-b0775f42b468">
+      <console name="expertname" type="STANDARD" schema="expertname" session="Main"><![CDATA[select * from `Questions`;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -24,20 +23,34 @@ select * from questions]]></console>
     <open-files />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
-    <filter-actions connection-id="2c321c56-1cd7-49e9-b4d9-33b58abef3b7" dataset="excel_study.functions" active-filter-id="" />
+    <filter-actions connection-id="fd5adca9-30a9-42c4-a268-b0775f42b468" dataset="expertname.Functions" active-filter-id="" />
   </component>
   <component name="DBNavigator.Project.ExecutionManager">
     <retain-sticky-names value="false" />
+  </component>
+  <component name="DBNavigator.Project.FileConnectionMappingManager">
+    <mapping file-url="file://$PROJECT_DIR$/demo/src/main/DB/Questions_insertion.sql" connection-id="fd5adca9-30a9-42c4-a268-b0775f42b468" session-id="MAIN" current-schema="expertname" />
+  </component>
+  <component name="DBNavigator.Project.MethodExecutionManager">
+    <method-browser />
+    <execution-history>
+      <group-entries value="true" />
+      <execution-inputs />
+    </execution-history>
+    <argument-values-cache />
   </component>
   <component name="DBNavigator.Project.ObjectQuickFilterManager">
     <last-used-operator value="EQUAL" />
     <filters />
   </component>
+  <component name="DBNavigator.Project.ScriptExecutionManager" clear-outputs="true">
+    <recently-used-interfaces />
+  </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
-      <connection id="2c321c56-1cd7-49e9-b4d9-33b58abef3b7" active="true" signed="true">
+      <connection id="fd5adca9-30a9-42c4-a268-b0775f42b468" active="true" signed="true">
         <database>
-          <name value="Excel_Study" />
+          <name value="expertname" />
           <description value="" />
           <database-type value="MYSQL" />
           <config-type value="BASIC" />
@@ -46,7 +59,7 @@ select * from questions]]></console>
           <driver-library value="" />
           <driver value="" />
           <url-type value="DATABASE" />
-          <host value="localhost" />
+          <host value="expertmaker.cj04x3wwgbp0.ap-northeast-2.rds.amazonaws.com" />
           <port value="3306" />
           <database value="mysql" />
           <type value="USER_PASSWORD" />

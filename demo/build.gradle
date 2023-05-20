@@ -26,6 +26,8 @@ dependencies {
 	compileOnly 'org.projectlombok:lombok:1.18.26'
 	annotationProcessor 'org.projectlombok:lombok:1.18.26'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test:3.0.4'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	runtimeOnly 'mysql:mysql-connector-java'
 }
 
 //tasks.named('test') {
@@ -69,4 +71,23 @@ task installReact(type: Exec) {
 		commandLine "npm", "audit", "fix"
 		commandLine 'npm', 'install'
 	}
+}
+
+tasks.named("bootJar") {
+	archiveClassifier = 'boot'
+	mainClass = 'ExpertMaker.demo.EfssApplication'
+	manifest {
+		attributes 'Start-Class': 'ExpertMaker.demo.EfssApplication'
+	}
+	duplicatesStrategy = org.gradle.api.file.DuplicatesStrategy.INCLUDE
+}
+
+tasks.named("jar") {
+	archiveClassifier = ''
+	enabled = false
+	duplicatesStrategy = org.gradle.api.file.DuplicatesStrategy.INCLUDE
+}
+
+springBoot {
+	mainClass = 'ExpertMaker.demo.EfssApplication'
 }
