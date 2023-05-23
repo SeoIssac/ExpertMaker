@@ -57,7 +57,7 @@ h1{
 }
 .button-container{
     margin-top: 400px;
-    display: vertical;
+    display: flex;
     justify-content: space-between;
 
 }
