@@ -32,10 +32,7 @@ function App() {
 
     return (
         <>
-            <h3>문제 번호: {question.id}</h3>
-            <h3>문제 난이도: {question.level}</h3>
-            <h3>문제 내용: {question.quest}</h3>
-            <h3>문제 답: {question.answer}</h3>
+            <h1>test</h1>
         </>
     );
 }
