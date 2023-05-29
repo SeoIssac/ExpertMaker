@@ -34,7 +34,7 @@ h1{
     margin-top: 20px;
 }
 
-.function-search-field {
+.func-search-field {
 	height: 2rem;
 	width: 50%;
 	margin-right: 15px;
@@ -81,22 +81,22 @@ h1{
     color: #2c2c2d;
 }
 
-li.function-list-item.row-2 {
+li.func-list-item.row-2 {
     background :#f8f8f8;
 }
 
-.function-name {
+.func-name {
     float: left;
     width: 20%;
     margin-left: 600px;
 }
 
-.function-summary {
+.func-summary {
     float: left;
     width: 45%;
 }
 
-.function-vars {
+.func-vars {
     float: left;
     width: 35%;
     overflow-x: auto;
@@ -113,20 +113,20 @@ li.function-list-item.row-2 {
     text-decoration: none;
 }
 
-.function-list-item:after {
+.func-list-item:after {
   content: "";
   display: table;
   clear: both;
 }
 
-.function-list-item {
+.func-list-item {
     margin-top: 10px;
     margin-bottom: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-#function-list-box ol{
+#func-list-box ol{
     list-style: none;
     margin: 30px;
 }
@@ -136,7 +136,7 @@ li.function-list-item.row-2 {
 }
 
 @media screen and (max-width: 600px) {
-    .function-vars, .function-summary, .function-name {
+    .func-vars, .func-summary, .func-name {
         width: 100%;
         margin-top: 5px;
     }
@@ -145,11 +145,11 @@ li.function-list-item.row-2 {
         display: none;
     }
     
-    #function-list-box ol{
+    #func-list-box ol{
         margin: 10px;
     }
 
-    .function-search-field {
+    .func-search-field {
         width: 80%;
         
     }
