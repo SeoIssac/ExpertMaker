@@ -5,10 +5,37 @@
     font-style: normal;
 }
 body{
-    background-color: lightyellow;
+    background-color: #FFF8DE;
     background-size: 1300px 800px;
     background-position: center center;
 }
+nav {
+    background-color: #FFF8DE;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+li {
+    display: inline-block;
+    margin-right: 20px;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'GmarketSansMedium';
+}
+a:hover {
+    color: #666;
+}
+
 h1{
     color: black; 
     font-family: 'GmarketSansMedium';
@@ -16,37 +43,20 @@ h1{
     font-weight: bolder;
     text-align: center;
     text-shadow: #4B504B;
+    margin-top: 30px;
   }
-.container{
-    width: 750px;
-    height: 1000px;
-    overflow: hidden;
-    position: relative;
-    float: left;
-    margin-right: 100px;
-    margin-left: 500px;
+
+.section img{
+    height: 900px;
+    width: 700px;
 }
-.container > img{
-    position: absolute;
-    width: 800px; 
-    height: 1000px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.text-container{
-    width: 750px;
-    height: 1000px;
-    overflow: hidden;
-    position: relative;
-    float: left;
-}
-.text-container > p{
+
+.section h2{
     font-family: 'GmarketSansMedium';
     font-size: 30px;
     font-weight: 500;
 }
-.text-container > input{
+.section input{
     font-family: 'GmarketSansMedium';
     font-size: 20px;
     font-weight: 500;
@@ -55,13 +65,8 @@ h1{
     margin-top: 50px;
     text-align: center;
 }
-.button-container{
-    margin-top: 400px;
-    display: flex;
-    justify-content: space-between;
 
-}
-.button-container > button{
+.section button{
     background-color: #4B504B;
     color: white;
     border: none;
@@ -74,6 +79,33 @@ h1{
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
     cursor: pointer;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-    margin-bottom: 30px;
+    margin-top: 200px;
+    border-radius: 13px;
 }
+
+.section submit{
+    background-color: #4B504B;
+    color: white;
+    border: none;
+    text-align: center;
+    display: inline-block;
+    font-family: 'GmarketSansMedium';
+    font-size: 20px;
+    width: 400px;
+    height: 40px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-bottom: 30px;
+    border-radius: 13px;
+}
+
+.container {
+    display: flex;
+}
+.section {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+
