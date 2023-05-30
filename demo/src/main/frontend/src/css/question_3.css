@@ -4,6 +4,10 @@
     font-weight: normal;
     font-style: normal;
 }
+body{
+    background-color: #699A78;
+}
+
 .container {
     display: flex;
     height: 100vh;

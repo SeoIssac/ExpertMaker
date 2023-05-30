@@ -4,6 +4,9 @@
     font-weight: normal;
     font-style: normal;
 }
+body{
+    background-color: #B3E7C3;
+}
 .container {
     display: flex;
     height: 100vh;
