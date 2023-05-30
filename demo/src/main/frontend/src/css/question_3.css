@@ -5,7 +5,7 @@
     font-style: normal;
 }
 body{
-    background-color: #699A78;
+    background-color: #99A98F;
 }
 
 .container {
@@ -52,7 +52,7 @@ body{
 
 
 .full-board {
-    background-color: #699A78;
+    background-color: #99A98F;
 }
 
 .half-boards {
@@ -63,5 +63,5 @@ body{
 
 .half-boards .board {
     flex: 1;
-    background-color: #699A78;
+    background-color: #99A98F;
 }
