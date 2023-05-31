@@ -61,7 +61,7 @@ body{
     margin-top: 20px;
 }
 
-.funcsearchfield {
+#mySearchBox {
 	height: 2rem;
 	width: 50%;
 	margin-right: 15px;
@@ -153,7 +153,7 @@ li.func-list-item.row-2 {
     padding-bottom: 10px;
 }
 
-#func-list-box ol{
+#funcListBox ol{
     list-style: none;
     margin: 30px;
 }
