@@ -9,6 +9,33 @@ body{
     background-size: 1300px 800px;
     background-position: center center;
 }
+nav {
+    background-color: #FFF8DE;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+li {
+    display: inline-block;
+    margin-right: 20px;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'GmarketSansMedium';
+}
+a:hover {
+    color: #666;
+}
+
 h1{
     font-family: 'GmarketSansMedium';
     font-size: 70px;
@@ -24,7 +51,7 @@ h1{
     margin-left: 700px;
 }
 
-.search-box {
+.searchbox {
     font-family: 'GmarketSansMedium';
     font-size: 20px;
     font-weight: 500;
@@ -34,7 +61,7 @@ h1{
     margin-top: 20px;
 }
 
-.func-search-field {
+.funcsearchfield {
 	height: 2rem;
 	width: 50%;
 	margin-right: 15px;
@@ -48,7 +75,7 @@ h1{
     font-weight: 500;
 }
 
-.search-box-label {
+.searchboxlabel {
     color: #fff;
     background-color: #464646;
     text-align: center;

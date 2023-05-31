@@ -5,12 +5,16 @@
     <link rel="stylesheet" href="../css/func_dic.module.css">
 </head>
 <body>
+<nav>
+    <ul>
+        <li><a href="main.html">메인 화면</a></li>
+    </ul>
+</nav>
     <h1>함수 사전</h1>
-    <div class="search-box">
-        <span class="search-box-label">함수 검색</span>
-        <input id="my-search-box" onkeyup="myFilterFunction()" class="function-search-field" 
-        placeholder="함수를 입력하세요. ex. VLOOKUP, SUMIF, ..." 
-        name="s" title="함수검색">
+    <div class="searchbox">
+        <span class="searchboxlabel">함수 검색</span>
+        <input id="my-search-box" class="functionsearchfield" placeholder="함수를 입력하세요.
+        ex. VLOOKUP, SUMIF, ..." name="s" title="함수검색">
     </div>
     <div id="function-list-box">
         <ol id="filter-target-list" class="function-list">
