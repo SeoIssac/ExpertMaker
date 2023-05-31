@@ -18,33 +18,33 @@
     background-size: 1300px 800px;
     }
 
-    nav {
+    #menu nav {
         background-color: #99A98F;
         display: flex;
         justify-content: center;
         margin: 20px;
     }
-    ul {
+    #menu ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
         text-align: center;
     }
-    li {
+    #menu li {
         display: inline-block;
         margin-right: 20px;
     }
-    a {
+    #menu a {
         text-decoration: none;
         color: white;
         font-size: 25px;
         font-weight: 700;
         font-family: 'GmarketSansMedium';
     }
-    a:hover {
+    #menu a:hover {
         color: #666;
     }
-    h1{
+    #title h1{
       color: white; text-align: center; margin-top: 20px; font-family: 'Nunito'; font-size: 80px;
     }
     .section button{

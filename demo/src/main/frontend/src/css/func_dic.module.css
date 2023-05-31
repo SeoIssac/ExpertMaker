@@ -4,39 +4,39 @@
     font-weight: normal;
     font-style: normal;
 }
-body{
+#menu body{
     background-color: #FFF8DE;
     background-size: 1300px 800px;
     background-position: center center;
 }
-nav {
+#menu nav {
     background-color: #FFF8DE;
     display: flex;
     justify-content: center;
     margin: 20px;
 }
-ul {
+#menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     text-align: center;
 }
-li {
+#menu li {
     display: inline-block;
     margin-right: 20px;
 }
-a {
+#menu a {
     text-decoration: none;
     color: black;
     font-size: 25px;
     font-weight: 700;
     font-family: 'GmarketSansMedium';
 }
-a:hover {
+#menu a:hover {
     color: #666;
 }
 
-h1{
+#title h1{
     font-family: 'GmarketSansMedium';
     font-size: 70px;
     font-weight: bolder;
