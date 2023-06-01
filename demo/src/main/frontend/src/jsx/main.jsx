@@ -1,25 +1,26 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
-import MainStyle from './css/main.module.css';
+import MainStyle from '../css/main.module.css';
 import { Router, Routes, Route, Link } from "react-router-dom";
 
-import Beginner from './img/newbie.png';
-import Junior from './img/promotion.png';
-import Senior from './img/rating.png';
+import Beginner from '../img/newbie3.png';
+import Junior from '../img/promotion3.png';
+import Senior from '../img/rating3.png';
 
 function Main() {
     return (
         <React.Fragment>
+        <div id={MainStyle.menu}>
             <nav>
                 <ul>
-                    <li><Link to="#">메인 화면</Link></li>
-                    <li><Link to="/api/certificate">수료증</Link></li>
-                    <li><Link to="/api/question">함수 문제</Link></li>
-                    <li><Link to="/api/function_dic">함수 사전</Link></li>
+                    <li><Link to="/function_dic">함수 사전</Link></li>
                 </ul>
             </nav>
+        </div>
 
+        <div id={MainStyle.title}>
             <h1>Excel Function Study with Simulator</h1>
+        </div>
 
             <div className={MainStyle.container}>
                 <div className={MainStyle.section}>

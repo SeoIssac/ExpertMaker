@@ -12,6 +12,12 @@ public class ReactPageController {
 
     @GetMapping("function_dic")
     public String dictionary(){
-        return "Function_dic";
+        System.out.println("페이지 이동: FunctionDic");
+        return "FunctionDic";
+    }
+
+    @GetMapping("")
+    public String mainPage(){
+        return "Main";
     }
 }
