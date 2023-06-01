@@ -1,42 +1,28 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
+import { Router, Routes, Route, Link } from "react-router-dom";
+import Main from './main.jsx';
+import Function_dic from './function_dic.jsx';
+import FuncDicService from './service/FuncDicService.jsx';
+
 
 function App() {
-   const [hello, setHello] = useState('')
-   const [question, setQuest] = useState({
-            id: null,
-            level: null,
-            quest: null,
-            answer: null,
-            correctImgSrc: null,
-            sheetImgSrc: null
-   })
+    const [testText, setText] = useState('text');
 
-    useEffect(() => {
-        axios.get('/api/hello')
-        .then(response => setHello(response.data))
-        .catch(error => console.log(error))
-    }, []);
-
-    useEffect(() => {
-        axios.get('/api/test')
-        .then(response => setQuest(response.data))
-        .catch(error => console.log(error))
-    }, []);
-
-    /*return (
-        <div>
-            백엔드에서 가져온 데이터입니다 : {hello}
-        </div>
-    );*/
+    useEffect((res) => {
+        FuncDicService.getFuncDic().then((res) => {
+            setText(res);
+        });
+    });
 
     return (
-        <>
-            <h3>문제 번호: {question.id}</h3>
-            <h3>문제 난이도: {question.level}</h3>
-            <h3>문제 내용: {question.quest}</h3>
-            <h3>문제 답: {question.answer}</h3>
-        </>
+        <React.Fragment>
+            <input type="hidden" value={testText}/>
+            <Routes>
+                <Route path="/" element={<Main />}></Route>
+                <Route path="/api/function_dic" element={<Function_dic />}></Route>
+            </Routes>
+        </React.Fragment>
     );
 }
 

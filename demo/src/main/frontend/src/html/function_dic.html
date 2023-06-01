@@ -2,28 +2,46 @@
 <head>
     <meta charset="utf-8">
     <title>함수 사전</title>
-    <link rel="stylesheet" href="../css/func_dic.css">
+    <link rel="stylesheet" href="../css/func_dic.module.css">
 </head>
 <body>
+
+<!-- 메뉴 -->
+<div id="menu">
+    <nav>
+        <ul>
+            <li><a href="main.html">메인 화면</a></li>
+        </ul>
+    </nav>
+</div>
+
+<!-- 제목 -->
+<div id="title">
     <h1>함수 사전</h1>
-    <div class="search-box">
-        <span class="search-box-label">함수 검색</span>
-        <input id="my-search-box" onkeyup="myFilterFunction()" class="function-search-field" 
-        placeholder="함수를 입력하세요. ex. VLOOKUP, SUMIF, ..." 
-        name="s" title="함수검색">
+</div>
+
+<!-- 서치박스 -->
+    <div class="searchbox">
+        <span class="searchboxlabel">함수 검색</span>
+        <input id="mySearchBox" class="functionsearchfield" placeholder="함수를 입력하세요.
+        ex. VLOOKUP, SUMIF, ..." name="s" title="함수검색">
     </div>
-    <div id="function-list-box">
-        <ol id="filter-target-list" class="function-list">
-    <li class="function-list-item row-1">				
-        <div class="function-name searchterms">
-            <div class="name-box">
+
+<!-- 함수 리스트 -->
+    <div id="functionListBox">
+    <ol id="filter-target-list" class="function-list">
+
+        <!-- 함수 리스트 address 함수 -->
+    <li class="functionlistitem">
+        <div class="functionname">
+            <div class="namebox">
                 <a>ADDRESS 함수</a>
             </div>
             </div>
-        <div class="function-summary searchterms">
-            <div class="summary-box">
-                <span class="func-cat">찾기 및 참조 : </span>
-                <span class="func-desc">입력한 열/행번호의 셀주소를 지정한 형식으로 반환합니다.</span>
+        <div class="functionsummary">
+            <div class="summarybox">
+                <span class="functionCat">찾기 및 참조 : </span>
+                <span class="functionDesc">입력한 열/행번호의 셀주소를 지정한 형식으로 반환합니다.</span>
             </div>
         </div>
     </li>

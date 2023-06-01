@@ -5,11 +5,38 @@
     font-style: normal;
 }
 body{
-    background-color: whitesmoke;
+    background-color: #FFF8DE;
     background-size: 1300px 800px;
     background-position: center center;
 }
-h1{
+#menu nav {
+    background-color: #FFF8DE;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+#menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+#menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'GmarketSansMedium';
+}
+#menu a:hover {
+    color: #666;
+}
+
+#title h1{
     font-family: 'GmarketSansMedium';
     font-size: 70px;
     font-weight: bolder;
@@ -24,7 +51,7 @@ h1{
     margin-left: 700px;
 }
 
-.search-box {
+.searchbox {
     font-family: 'GmarketSansMedium';
     font-size: 20px;
     font-weight: 500;
@@ -34,7 +61,7 @@ h1{
     margin-top: 20px;
 }
 
-.function-search-field {
+#mySearchBox {
 	height: 2rem;
 	width: 50%;
 	margin-right: 15px;
@@ -48,7 +75,7 @@ h1{
     font-weight: 500;
 }
 
-.search-box-label {
+.searchboxlabel {
     color: #fff;
     background-color: #464646;
     text-align: center;
@@ -63,93 +90,76 @@ h1{
     font-weight: 500;
 }
 
-.param {
+#filtertargetlist {
     font-size: 0.95em;
-    background: none repeat scroll 0 0 #464646;
-    color: white;
-    border: 2px solid #464646;
-    border-radius: 4px 4px 4px 4px;
-    margin: 0 5px 0 0;
-    padding: 1px 5px;
-    min-width: 25px;
-    display: inline-block;
+    background: none repeat scroll 0 0;
+    color: black;
+    min-width: 30px;
     text-align: center;
 }
 
-.param.optional {
-    background: none repeat scroll 0 0 #FAFAFA;
-    color: #2c2c2d;
-}
-
-li.function-list-item.row-2 {
-    background :#f8f8f8;
-}
-
-.function-name {
+.functionname {
     float: left;
     width: 20%;
-    margin-left: 600px;
+    margin-left: 300px;
 }
 
-.function-summary {
+.functionsummary {
     float: left;
     width: 45%;
 }
 
-.function-vars {
-    float: left;
-    width: 35%;
-    overflow-x: auto;
-    overflow-y: hidden;
-    white-space: nowrap;
-}
-
-.name-box, .summary-box, .vars-box {
+.namebox, .summarybox{
     padding-left: 10px;
     padding-right: 10px;
 }
 
-.name-box a{
+.namebox a{
     text-decoration: none;
+    font-family: GmarketSansMedium;
+    font-size: 25px;
+    font-weight: bold;
 }
 
-.function-list-item:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.function-list-item {
+.funclistitem {
     margin-top: 10px;
     margin-bottom: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-#function-list-box ol{
+#functionListBox ol{
     list-style: none;
     margin: 30px;
 }
 
-.func-cat {
-    font-weight: bold;    
+.functionCat {
+    font-weight: bold;
+    font-family: GmarketSansMedium;
+    font-size: 20px;
+}
+
+.functionDesc {
+    font-weight: bold;
+    font-family: GmarketSansMedium;
+    font-size: 20px;
 }
 
 @media screen and (max-width: 600px) {
-    .function-vars, .function-summary, .function-name {
+    .funcvars, .functionsummary, .functionname {
         width: 100%;
         margin-top: 5px;
     }
     
-    .search-box-label {
+    .searchboxlabel {
         display: none;
     }
     
-    #function-list-box ol{
+    #funcListBox ol{
         margin: 10px;
     }
 
-    .function-search-field {
+    .functionsearchfield {
         width: 80%;
         
     }

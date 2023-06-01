@@ -4,6 +4,9 @@
     font-weight: normal;
     font-style: normal;
 }
+body{
+    background-color: #D6E8DB;
+}
 .container {
     display: flex;
     height: 100vh;
@@ -47,7 +50,7 @@
 }
 
 .full-board {
-    background-color: #B3E7C3;
+    background-color: #D6E8DB;
 }
 
 .half-boards {
@@ -58,5 +61,5 @@
 
 .half-boards .board {
     flex: 1;
-    background-color: #e0e0e0;
+    background-color: #D6E8DB;
 }
