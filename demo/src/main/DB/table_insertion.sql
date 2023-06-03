@@ -30,5 +30,5 @@ CREATE TABLE if not exists Functions
 (
      ID INT PRIMARY KEY AUTO_INCREMENT,
      Function_Name VARCHAR(50) NOT NULL,
-     Function_info VARCHAR(500) NOT NULL
+     Function_Info VARCHAR(500) NOT NULL
 );
