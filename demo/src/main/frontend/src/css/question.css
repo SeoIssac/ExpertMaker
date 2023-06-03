@@ -58,11 +58,18 @@
     width: 800px;
     height: 100px;
     margin-top: 50px;
+    border: none;
+
 }
 
 #submit {
     width: 100px;
     height: 40px;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 17px;
+    cursor: pointer;
 }
 
 .full-board {
