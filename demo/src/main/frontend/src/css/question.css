@@ -4,8 +4,24 @@
     font-weight: normal;
     font-style: normal;
 }
-body{
+#body{
     background-color: #D6E8DB;
+}
+#header button{
+    background-color: white;
+    border: 2px;
+    color: black;
+    padding: 8px 15px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-family: 'Noto Sans Mono', monospace;
+    font-size: 13px;
+    font-weight: bold;
 }
 .container {
     display: flex;
