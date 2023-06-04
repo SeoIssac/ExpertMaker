@@ -37,10 +37,12 @@
     font-family: 'GmarketSansMedium';
     font-size: 48px;
     font-weight: 500;
-        }
+    font-weight: bold;
+}
+
 .board > p{
     font-family: 'GmarketSansMedium';
-    font-size: 24px;
+    font-size: 35px;
     font-weight: 300;
 }
 .board > input {
