@@ -67,6 +67,10 @@
         align-items: center;
         align-content: center;
     }
+        .section button:hover {
+            scale: 1.1;
+        }
+
     .section p{
         color: white;
         font-size: 40px;

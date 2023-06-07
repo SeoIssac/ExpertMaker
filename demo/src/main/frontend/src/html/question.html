@@ -2,28 +2,57 @@
 <head>
     <meta charset="utf-8">
     <title>초급문제 화면</title>
-    <link rel="stylesheet" href="../css/question.css">
+    <link rel="stylesheet" href="../css/question.module.css">
 </head>
 <body id="body">
+    <div id="correct">
+        <div>
+            <h3>BEGINNER 1번 문제</h3>
+            <h1>CLEAR</h1>
+            <a href="#" onclick="closeCorrect()">다음 문제로 이동</a>
+            <a href="main.html" >시작 화면으로</a>
+        </div>
+    </div>
 <header id="header">
     <button type="button" id="previous" onclick="history.go(-1)"><-prev</button>
 </header>
     <div class="container">
         <div class="board full-board">
-            <h1>초급단계 1번 문제</h1>
+            <h1>BEGINNER 1번 문제</h1>
             <p>
-                중간고사 시험 공부가 하기 싫었던 홍길동 학생은 종강까지 앞으로 며칠 남았는지 계산해보려고 합니다.
-                DAYS 함수를 사용해서 오늘부터 종강일까지 며칠 남았는지 계산해주세요.
+                중간고사 시험 공부가 하기 싫었던 홍길동 학생은 종강까지 앞으로 며칠 남았는지 계산해보려고 합니다.<br>
+                DAYS 함수를 사용해서 오늘부터 종강일까지 며칠 남았는지 계산해주세요.<br>
+                <div class="useFunction">
+                    <span>DAYS(종료일, 시작일)</span>
+                </div>
             </p>
-            <input type="text" id="answer" autofocus required>
-            <button type="submit" id="submit">답안 제출</button>
+            <input type="text" id="answer" autofocus required value="=">
+            <button type="submit" id="submit" onclick="showCorrect()">답안 제출</button>
         </div>
         <div class="half-boards">
             <div class="board">
+                <h2>정답 화면</h2>
+                <img id="answerGif" src="../img/answer/Beginner01Answer.gif" width="90%" style="margin: 0; padding: 0; visibility: hidden;">
             </div>
             <div class="board">
+                <h2>엑셀 시트 자료</h2>
+                <img src="../img/sheet/Beginner01Sheet.png" height="60%">
             </div>
         </div>
     </div>
 </body>
+<script>
+    function showCorrect() {
+        if(document.getElementById("answer").value === "=DAYS(C3,B3)"){
+            document.getElementById("answerGif").style.visibility = "visible";
+            setTimeout(()=>{ document.getElementById("correct").style.visibility = "visible"; }, 5000);
+        }
+    }
+
+    function closeCorrect() {
+        document.getElementById("answer").value = "=";
+        document.getElementById("correct").style.visibility = "hidden";
+        document.getElementById("answerGif").style.visibility = "hidden";
+    }
+</script>
 </html>

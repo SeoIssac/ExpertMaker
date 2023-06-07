@@ -1,13 +1,27 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import MainStyle from '../css/main.module.css';
-import { Router, Routes, Route, Link } from "react-router-dom";
+import { Router, Routes, Route, Link, useNavigate } from "react-router-dom";
 
 import Beginner from '../img/newbie3.png';
 import Junior from '../img/promotion3.png';
 import Senior from '../img/rating3.png';
 
 function Main() {
+    const navigate = useNavigate();
+
+    const navigateToBeginner = () => {
+      navigate("/question/BEGINNER");
+    };
+
+    const navigateToJunior = () => {
+      navigate("/question/JUNIOR");
+    };
+
+    const navigateToSenior = () => {
+      navigate("/question/SENIOR");
+    };
+
     return (
         <React.Fragment>
         <div id={MainStyle.menu}>
@@ -29,7 +43,7 @@ function Main() {
                         <h2>초급</h2>
                         <p>CLEAR!</p>
                         <div>
-                            <button type="button" onclick="#">입장하기</button>
+                            <button type="button" onClick={navigateToBeginner}>입장하기</button>
                         </div>
                     </div>
                 </div>
@@ -40,7 +54,7 @@ function Main() {
                     <h2>중급</h2>
                     <p>★ 10 / 30</p>
                         <div>
-                            <button type="button" onclick="#">입장하기</button>
+                            <button type="button" onClick={navigateToJunior}>입장하기</button>
                         </div>
                     </div>
                     </div>
@@ -51,7 +65,7 @@ function Main() {
                     <h2>고급</h2>
                     <p>★ 5 / 30</p>
                         <div>
-                            <button type="button" onclick="#">입장하기</button>
+                            <button type="button" onClick={navigateToSenior}>입장하기</button>
                         </div>
                     </div>
                 </div>
