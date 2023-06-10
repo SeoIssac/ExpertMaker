@@ -1,4 +1,4 @@
-package DB;
+package DB.JDBC;
 import java.sql.*;
 public class Handler implements DBLoader {
     @Override
@@ -21,7 +21,7 @@ public class Handler implements DBLoader {
             return rs;
         }
     }
-    @Override
+    /*@Override
     public ResultSet Search_Functions(String Keyword) {
         ResultSet rs = null;
         try {
@@ -41,7 +41,7 @@ public class Handler implements DBLoader {
             e.printStackTrace();
             return rs;
         }
-    }
+    }*/
     @Override
     public ResultSet Load_Questions(int ID){
         ResultSet rs = null;
