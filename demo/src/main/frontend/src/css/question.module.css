@@ -15,9 +15,11 @@
     background-color: #D6E8DB;
     margin: 0;
 }
+    #correct, #levelClear {
+        visibility: hidden;
+    }
 
     .questionModal {
-        visibility: hidden;
         position: absolute;
         top: 0; left: 0; right: 0; bottom: 0;
         margin: auto;

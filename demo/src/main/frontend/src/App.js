@@ -18,12 +18,24 @@ function App() {
     const [testText, setText] = useState('text');
     const path = JSON.parse(JSON.stringify(location.pathname)).split("/");
 
-    useEffect((res) => {
-        PageService.getFuncDic().then((res) => {
+/*
+    useEffect(() => {
+        */
+/*PageService.getFuncDic().then((res) => {
             //console.log(JSON.parse(JSON.stringify(res.data)));
+        });*//*
+
+
+        PageService.getBeginner().then((res) => {
+            alert(JSON.stringify(res.data));
+        });
+
+        PageService.getJunior().then((res) => {
+            alert(JSON.stringify(res.data));
         });
 
     }, []);
+*/
 
     useEffect(() => {
         document.body.classList.value = '';
