@@ -12,7 +12,6 @@ public class ReactPageController {
 
     @GetMapping("function_dic")
     public String dictionary(){
-        System.out.println("페이지 이동: FunctionDic");
         return "FunctionDic";
     }
 
