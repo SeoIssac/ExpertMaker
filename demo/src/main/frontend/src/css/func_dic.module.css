@@ -43,14 +43,6 @@
     font-weight: bolder;
     text-align: center;
 }
-.text-container{
-    width: 1000px;
-    height: 3000px;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    margin-left: 700px;
-}
 
 .searchbox {
     font-family: 'GmarketSansMedium';
@@ -91,28 +83,26 @@
     font-weight: 500;
 }
 
-#filtertargetlist {
-    font-size: 0.95em;
-    background: none repeat scroll 0 0;
-    color: black;
-    min-width: 30px;
-    text-align: center;
-}
-
 .functionname {
     float: left;
-    width: 20%;
-    margin-left: 300px;
+    flex: 1;
 }
 
 .functionsummary {
     float: left;
-    width: 45%;
+    flex: 2;
+    display: flex;
+    align-items: center;
 }
 
-.namebox, .summarybox{
-    padding-left: 10px;
+.namebox {
     padding-right: 10px;
+    margin-bottom: 45px;
+}
+
+.summarybox {
+    padding-left: 10px;
+    margin-bottom: 45px;
 }
 
 .namebox a{
@@ -122,16 +112,23 @@
     font-weight: bold;
 }
 
-.funclistitem {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+.name-box a:hover{
+    text-decoration: underline;
+}
+
+.functionlistitem {
+    display: flex;
+    align-items: center;
 }
 
 #functionListBox ol{
     list-style: none;
     margin: 30px;
+}
+
+#functionListBox{
+    display: flex;
+    justify-content: center;
 }
 
 .functionCat {
@@ -141,27 +138,26 @@
 }
 
 .functionDesc {
-    font-weight: bold;
     font-family: GmarketSansMedium;
     font-size: 20px;
 }
 
 @media screen and (max-width: 600px) {
-    .funcvars, .functionsummary, .functionname {
+    .function-vars, .function-summary, .function-name {
         width: 100%;
         margin-top: 5px;
     }
-    
-    .searchboxlabel {
+
+    .search-box-label {
         display: none;
     }
-    
-    #funcListBox ol{
+
+    #function-list-box ol{
         margin: 10px;
     }
 
-    .functionsearchfield {
+    .function-search-field {
         width: 80%;
-        
+
     }
 }
