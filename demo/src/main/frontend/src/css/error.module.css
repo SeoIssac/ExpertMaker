@@ -46,7 +46,7 @@
     font-size: 30px;
 }
 
-.button-container button{
+.buttonContainer button{
     background-color: #4B504B;
     border: none;
     color: white;
@@ -63,7 +63,7 @@
     max-width: 300px;
     max-height: 100px;
 }
-.button-container button:hover {
+.buttonContainer button:hover {
     scale: 1.1;
 }
 

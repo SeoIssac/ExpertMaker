@@ -12,15 +12,24 @@ function Question({history}) {
     const [ value, setValue ] = useState('=');
     const inputRef = useRef(null);
     const [ stage, setStage ] = useState(1);
+    const [ question, setQuest ] = useState('=');
+    const [ answer, setAnswer ] = useState('=');
 
     const navigateToMain = () => {
       navigate("/");
     };
 
     const showCorrect = () => {
-        if(value === "=DAYS(C3,B3)"){
-            document.getElementById(QuestionStyle.answerGif).style.visibility = "visible";
-            setTimeout(()=>{ document.getElementById(QuestionStyle.correct).style.visibility = "visible"; }, 5000);
+        if(value.replace(" ", "") === "=DAYS(C3,B3)"){
+            if(stage === 2) {
+                document.getElementById(QuestionStyle.answerGif).style.visibility = "visible";
+                setTimeout(()=>{ document.getElementById(QuestionStyle.levelClear).style.visibility = "visible"; }, 5000);
+            } else {
+                document.getElementById(QuestionStyle.answerGif).style.visibility = "visible";
+                setTimeout(()=>{ document.getElementById(QuestionStyle.correct).style.visibility = "visible"; }, 5000);
+            }
+        } else {
+            alert("오답입니다. 다시 작성해보세요.");
         }
     };
 
@@ -39,9 +48,17 @@ function Question({history}) {
         init();
     };
 
+    const closeLevelClear = () => {
+        document.getElementById(QuestionStyle.correct).style.visibility = "hidden";
+        document.getElementById(QuestionStyle.answerGif).style.visibility = "hidden";
+
+        setValue("=");
+        setStage(1);
+    };
+
     return (
     <React.Fragment>
-       <div id={QuestionStyle.correct}>
+       <div id={QuestionStyle.correct} className={QuestionStyle.questionModal}>
            <div>
                <h3>{params.level} {stage}번 문제</h3>
                <h1>CLEAR</h1>
@@ -49,6 +66,14 @@ function Question({history}) {
                <Link to="/" >시작 화면으로</Link>
            </div>
        </div>
+       <div id={QuestionStyle.levelClear} className={QuestionStyle.questionModal}>
+          <div>
+              <h3>{params.level}</h3>
+              <h1>CLEAR</h1>
+              <a onClick={closeLevelClear}>처음부터 풀어보기</a>
+              <Link to="/" >시작 화면으로</Link>
+          </div>
+      </div>
        <header id={QuestionStyle.header}>
            <button type="button" id={QuestionStyle.previous} onClick={navigateToMain}>prev</button>
        </header>

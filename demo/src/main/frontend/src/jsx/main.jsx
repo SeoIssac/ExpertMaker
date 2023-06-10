@@ -22,6 +22,10 @@ function Main() {
       navigate("/question/SENIOR");
     };
 
+    const navigateToError = () => {
+      navigate("/errorPage");
+    };
+
     return (
         <React.Fragment>
         <div id={MainStyle.menu}>
@@ -41,7 +45,6 @@ function Main() {
                     <div>
                         <img src={Beginner} alt="초급단계"/>
                         <h2>초급</h2>
-                        <p>CLEAR!</p>
                         <div>
                             <button type="button" onClick={navigateToBeginner}>입장하기</button>
                         </div>
@@ -51,8 +54,7 @@ function Main() {
                 <div className={MainStyle.section}>
                     <div>
                         <img src={Junior} alt="중급단계"/>
-                    <h2>중급</h2>
-                    <p>★ 10 / 30</p>
+                        <h2>중급</h2>
                         <div>
                             <button type="button" onClick={navigateToJunior}>입장하기</button>
                         </div>
@@ -62,10 +64,9 @@ function Main() {
                 <div className={MainStyle.section}>
                     <div>
                         <img src={Senior} alt="고급단계"/>
-                    <h2>고급</h2>
-                    <p>★ 5 / 30</p>
+                        <h2>고급</h2>
                         <div>
-                            <button type="button" onClick={navigateToSenior}>입장하기</button>
+                            <button type="button" onClick={navigateToError}>입장하기</button>
                         </div>
                     </div>
                 </div>

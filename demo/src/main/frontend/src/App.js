@@ -5,6 +5,7 @@ import { Routes, Route, Link, useLocation } from "react-router-dom";
 import Main from './jsx/main.jsx';
 import Function_dic from './jsx/function_dic.jsx';
 import Question from './jsx/question.jsx';
+import ErrorPage from './jsx/error.jsx';
 
 import PageService from './service/PageService.jsx';
 
@@ -35,6 +36,7 @@ function App() {
                 else if(path[2] === "JUNIOR") { document.body.classList.add('JuniorBody'); }
                 else if(path[2] === "SENIOR") { document.body.classList.add('SeniorBody'); }
                 break;
+            case "errorPage" : document.body.classList.add('ErrorBody'); break;
             default: document.body.classList.add('MainBody');
         }
     }, [location]);
@@ -46,6 +48,7 @@ function App() {
                 <Route path="/" element={<Main />}></Route>
                 <Route path="/function_dic" element={<Function_dic />}></Route>
                 <Route path="/question/:level" element={<Question />}></Route>
+                <Route path="/errorPage" element={<ErrorPage />}></Route>
             </Routes>
         </React.Fragment>
     );

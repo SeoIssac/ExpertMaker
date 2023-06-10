@@ -16,7 +16,7 @@
     margin: 0;
 }
 
-    #correct {
+    .questionModal {
         visibility: hidden;
         position: absolute;
         top: 0; left: 0; right: 0; bottom: 0;
@@ -28,12 +28,12 @@
         display: table;
         z-index: 10;
     }
-    #correct div {
+    .questionModal div {
         display: table-cell;
         vertical-align: middle;
         height: 100%;
     }
-        #correct h1 {
+        .questionModal h1 {
             margin: 0 auto;
             font-family: 'RixYeoljeongdo_Regular';
             color: white;
@@ -41,7 +41,7 @@
             letter-spacing: 40px;
         }
 
-        #correct h3 {
+        .questionModal h3 {
             margin: 0 auto;
             font-family: 'GmarketSansMedium';
             color: white;
@@ -49,7 +49,7 @@
             font-size: 48px;
         }
 
-        #correct a {
+        .questionModal a {
             display: block;
             background-color: #C1D0B5;
             width: 300px;
