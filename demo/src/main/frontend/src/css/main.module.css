@@ -46,7 +46,11 @@
         color: #666;
     }
     #title h1{
-      color: white; text-align: center; margin-top: 20px; font-family: 'Nunito'; font-size: 80px;
+        color: white;
+        text-align: center;
+        margin-top: 50px;
+        font-family: 'Nunito';
+        font-size: 85px;
     }
     .section button{
         background-color: #4B504B;
@@ -66,47 +70,43 @@
         font-size: 20px;
         align-items: center;
         align-content: center;
+        min-width: 125px;
+        min-height: 10px;
+        max-width: 125px;
+        max-height: 100px;
     }
-        .section button:hover {
-            scale: 1.1;
-        }
+    .section button:hover {
+        scale: 1.1;
+    }
 
     .section{
         text-align: center;
     }
 
-    .section p{
-        color: white;
-        font-size: 40px;
-        font-weight: bolder;
-        font-family: 'GmarketSansMedium';
-        text-align: center;
-        margin-right: 100px;
-        margin-left: 100px;
-    }
     .section h2{
         color: white;
-        font-size: 40px;
+        font-size: 45px;
         font-weight: bolder;
         font-family: 'GmarketSansMedium';
         text-align: center;
-        margin-right: 100px;
-        margin-left: 100px;
+
     }
     .section img{
-        width: 35%;
+        width: 40%;
         align-items: center;
         margin: 0 auto;
     }
     .container {
         display: flex;
-        justify-content: center; /* 가로 중앙 정렬 */
-        align-items: center; /* 세로 중앙 정렬 */
+        justify-content: center;
+        align-items: center;
     }
     .section {
         flex: 1;
         padding: 0px;
         box-sizing: border-box;
     }
+
+
 
 

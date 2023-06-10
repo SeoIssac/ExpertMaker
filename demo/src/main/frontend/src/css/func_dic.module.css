@@ -119,6 +119,9 @@
 .functionlistitem {
     display: flex;
     align-items: center;
+    border-bottom: 3px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
 }
 
 #functionListBox ol{
