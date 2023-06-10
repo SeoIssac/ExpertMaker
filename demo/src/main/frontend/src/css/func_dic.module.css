@@ -86,6 +86,7 @@
 .functionname {
     float: left;
     flex: 1;
+    align-items: center;
 }
 
 .functionsummary {
@@ -95,22 +96,26 @@
     align-items: center;
 }
 
+
 .namebox {
     padding-right: 10px;
     margin-bottom: 45px;
+    transform: translateY(50%);
+}
+
+.namebox a {
+    text-decoration: none;
+    font-family: 'GmarketSansMedium';
+    font-size: 25px;
+    font-weight: bold;
 }
 
 .summarybox {
     padding-left: 10px;
     margin-bottom: 45px;
+    transform: translateY(50%);
 }
 
-.namebox a{
-    text-decoration: none;
-    font-family: GmarketSansMedium;
-    font-size: 25px;
-    font-weight: bold;
-}
 
 .name-box a:hover{
     text-decoration: underline;
@@ -120,8 +125,8 @@
     display: flex;
     align-items: center;
     border-bottom: 3px solid #ccc;
-    padding-bottom: 5px;
-    margin-bottom: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 #functionListBox ol{

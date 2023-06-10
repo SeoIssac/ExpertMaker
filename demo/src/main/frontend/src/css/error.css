@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #99A98F;
+    background-size: 1300px 800px;
+    background-position: center center;
+}
+
+#message {
+    text-align: center;
+}
+
+#message h1{
+    color: white;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family: 'GmarketSansMedium';
+    font-size: 55px;
+}
+
+#message h2{
+    color: white;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family: 'GmarketSansMedium';
+    font-size: 40px;
+}
+
+#message h3{
+    color: white;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family: 'GmarketSansMedium';
+    font-size: 30px;
+}
+
+.button-container button{
+    background-color: #4B504B;
+    border: none;
+    color: white;
+    padding: 25px 30px;
+    border-radius: 25px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-family: 'GmarketSansMedium';
+    font-size: 25px;
+    min-width: 300px;
+    min-height: 20px;
+    max-width: 300px;
+    max-height: 100px;
+}
+.button-container button:hover {
+    scale: 1.1;
+}
+
+
+
