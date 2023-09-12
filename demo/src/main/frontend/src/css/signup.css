@@ -1,0 +1,21 @@
+body {
+    background-color: #FFF8DE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.shape1 {
+    border: none;
+    border-radius: 36px;
+    width: 700px;
+    height: 700px;
+    background-color: white;
+}
+.shape1 h1 {
+    font-size: 25px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
