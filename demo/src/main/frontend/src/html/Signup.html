@@ -1,17 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <title>Sign up</title>
   <link rel="stylesheet" href="../css/signup.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap" rel="stylesheet">
+
 </head>
 <body id="body">
-<div class="shape1">
+<div class="container">
   <h1>Sign up</h1>
-</div>
+  <form id="form" action="회원가입처리페이지.php" method="POST">
+    <label for="username" id="label">아이디</label>
+    <input type="text" id="username" maxlength="10" name="username" required>
 
+    <label for="password" id="labelp">비밀번호</label>
+    <input type="password" id="password" maxlength="15" name="password" required>
+
+    <label for="confirm-password" id="labelcp" >비밀번호 확인</label>
+    <input type="password" id="confirm-password" maxlength="15" name="confirm-password" required>
+
+    <button id="button1" type="submit">Sign up</button>
+  </form>
+</div>
 </body>
 </html>
