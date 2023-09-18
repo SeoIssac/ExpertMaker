@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunito/v25/XRXV3I6Li01BKofIOOaBXso.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+#body {
+    background: #99A98F;
+    background-size: 100% auto;
+    background-position: center;
+}
+
+#title h1 {
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Nunito';
+    font-size: 85px;}
+
+a { text-decoration: none;
+    font-family: 'GmarketSansMedium';}
+
+
+nav { background: #99A98F;
+    justify-content: center;
+    display: flex;}
+
+nav ul {
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    display: block;
+    font-size: 25px;
+    padding: 15px 14px;
+    transition: 0.3s linear;
+    font-family: 'GmarketSansMedium';
+}
+
+nav ul li:hover a {
+    color: black;
+}
+
+nav ul li ul {
+    border-bottom: 5px solid #4B504B;
+    display: none;
+    position: absolute;
+    width: 150px;
+}
+
+nav ul li ul li {
+    border-top: 1px solid black;
+    display: block;}
+
+nav ul li ul li:first-child { border-top: none; }
+
+nav ul li ul li a {
+    background: #4B504B;
+    color: white;
+    display: block;
+    padding: 10px 14px;
+    font-family: 'GmarketSansMedium';
+}
+
+nav ul li ul li a:hover { background: #99A98F; color: white}
+
+nav .fa.fa-angle-down { margin-left: 6px; }
+
+.section button{
+    background-color: #4B504B;
+    border: none;
+    color: white;
+    padding: 19px 20px;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 255px;
+    margin-left: 255px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-family: 'GmarketSansMedium';
+    font-size: 20px;
+    align-items: center;
+    align-content: center;
+    min-width: 125px;
+    min-height: 10px;
+    max-width: 125px;
+    max-height: 100px;
+}
+.section button:hover {
+    scale: 1.1;
+}
+
+.section{
+    text-align: center;
+}
+
+.section h2{
+    color: white;
+    font-size: 45px;
+    font-weight: bolder;
+    font-family: 'GmarketSansMedium';
+    text-align: center;
+
+}
+.section img{
+    width: 40%;
+    align-items: center;
+    margin: 0 auto;
+}
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section {
+    flex: 1;
+    padding: 0px;
+    box-sizing: border-box;
+}

@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Noto+Sans+Mono:wght@100&display=swap');
+
+body {
+    background:#99A98F;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.form {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:300px;
+    height:250px;
+    padding:10px;
+}
+.form .form-header {
+    height:30px;
+    display:flex;
+    align-items:center;
+    text-align:center;
+}
+.form .form-header > div {
+    width:calc(100% / 3);
+    color: white;
+    font-size:20px;
+    font-weight:600;
+    cursor:pointer;
+}
+.form.signup .form-header div.show-signup {
+    color: black;
+}
+.form.signin .form-header div.show-signin {
+    color: black;
+}
+
+.form .form-elements {
+    margin-top:15px;
+}
+.form .form-elements .form-element {
+    height:50px;
+    opacity:1;
+    overflow:hidden;
+    transition:all 500ms ease-in-out;
+}
+.form .form-elements input {
+    width:100%;
+    padding:10px;
+    font-size:16px;
+    margin:5px 0px;
+    border-radius:10px;
+    box-sizing:border-box;
+    border:0.5px solid #222;
+    background: white;
+}
+.form .form-elements button {
+    width:100%;
+    padding:10px;
+    font-size:16px;
+    font-weight:600;
+    margin-top:5px;
+    border-radius:10px;
+    background:#FFF8DE;
+    color: black;
+    cursor:pointer;
+    border:none;
+    outline:none;
+}
+.form.signin .form-elements > div:nth-child(3) {
+    height:0px;
+    opacity:0;
+}
+
+.form .arrow {
+    position:absolute;
+    top:51px;
+    width:0;
+    height:0;
+    border-left:10px solid transparent;
+    border-right:10px solid transparent;
+    border-bottom:10px solid black;
+}
+.form.signup .arrow {
+    left:calc(calc(100% / 3) / 2);
+}
+.form.signin .arrow {
+    left:calc(calc(100% / 3) + calc(calc(100% / 3) / 2.2)) ;
+}
