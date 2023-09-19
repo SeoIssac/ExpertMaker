@@ -14,6 +14,7 @@
 #body{
     background-color: #D6E8DB;
     margin: 0;
+    background-size: auto;
 }
     #correct, #levelClear {
         visibility: hidden;
@@ -67,10 +68,8 @@
     position: absolute;
     left: 5px;
     top: 5px;
-
-    background-color: white;
-    border: 2px;
-    color: black;
+    background: none;
+    outline: black;
     padding: 8px 15px;
     border-radius: 20px;
     text-align: center;
@@ -82,33 +81,38 @@
     font-family: 'Noto Sans Mono', monospace;
     font-size: 13px;
     font-weight: bold;
+    margin-top: 10px;
+    margin-left: 100px;
 }
 .container {
-    display: flex;
-    height: 100vh;
+    display: flex
 }
 
-.board {
+.board{
     flex: 1;
-    margin: 0;
-    padding: 30px 10px;
+    padding: 20px 10px;
+    margin-left: 100px;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
+
 .board > h1{
     font-family: 'GmarketSansMedium';
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 500;
     font-weight: bold;
 }
 
 .board > p{
     font-family: 'GmarketSansMedium';
-    font-size: 35px;
+    font-size: 20px;
     font-weight: 300;
 }
 
     .useFunction {
         font-family: 'GmarketSansMedium';
-        margin-top: 50px;
+        margin-top: 30px;
+        font-size: 20px;
     }
     .useFunction span {
         background-color: #FFF8DE;
@@ -124,24 +128,24 @@
 
 .board > button{
     font-family: 'GmarketSansMedium';
-    font-size: 20px;
+    font-size: 30px;
     font-weight: normal;
 }
 #answer {
-    width: 100%;
+    width: 70%;
     height: 100px;
     margin-top: 50px;
-    border: none;
 }
 
 #answerGif {
-    width: 90%;
+    width: 80%;
     margin: 0; padding: 0;
     visibility: hidden;
 }
 
 #questionSheet {
-    height: 60%;
+    height: 70%;
+    width: 450px;
 }
 
 #submit {
@@ -149,7 +153,7 @@
     height: 40px;
     background-color: white;
     margin: 10px 0;
-    float: right;
+    margin-left: 30px;
     border: none;
     border-radius: 10px;
     font-size: 17px;
@@ -161,11 +165,7 @@
     display: flex;
     flex: 1;
     flex-direction: column;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    height: 900px;
 }
-
-.halfBoards .board {
-    flex: 1;
-}
- .halfBoards h2 {
-    margin: 10px 0;
- }

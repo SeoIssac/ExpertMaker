@@ -2,28 +2,66 @@
 <head>
   <meta charset="utf-8">
   <title>고급문제 화면</title>
-  <link rel="stylesheet" href="../css/question_3.css">
+  <link rel="stylesheet" href="../css/question_2.css">
 </head>
 <body id="body">
+<div id="correct" class="questionModal">
+  <div>
+    <h3>Senior 1번 문제</h3>
+    <h1>CLEAR</h1>
+    <a href="#" onclick="closeCorrect()">다음 문제로 이동</a>
+    <a href="main.html" >시작 화면으로</a>
+  </div>
+</div>
+<div id="levelClear" class="questionModal">
+  <div>
+    <h3>BEGINNER</h3>
+    <h1>CLEAR</h1>
+    <a href="#" onclick="closeLevelClear()">처음부터 다시 풀어보기</a>
+    <a href="main.html" >시작 화면으로</a>
+  </div>
+</div>
 <header id="header">
-  <button type="button" id="previous" onclick="history.go(-1)"><-prev</button>
+  <button type="button" id="previous" onclick="history.go(-1)">prev</button>
 </header>
 <div class="container">
   <div class="board full-board">
-    <h1>고급단계 3번 문제</h1>
+    <h1>Senior 1번 문제</h1>
     <p>
-      타오르고 있는가? 우리 눈이 그것을 보는 때에 우리의 귀는 생의 찬미를 듣는다 그것은 응대한 관현악이며 미묘한 교향악이다.
-      뼈 끝에 스며 들어가는 열락의 소리다이것은 피어나기 전인 유소년에게서 구하지 못할 바이며 시들어 가는 노년에게서
+      중간고사 시험 공부가 하기 싫었던 홍길동 학생은 종강까지 앞으로 며칠 남았는지 계산해보려고 합니다.<br>
+      DAYS 함수를 사용해서 오늘부터 종강일까지 며칠 남았는지 계산해주세요.<br>
+    <div class="useFunction">
+      <span>DAYS(종료일, 시작일)</span>
+    </div>
     </p>
-    <input type="text" id="answer" autofocus required>
-    <button type="submit" id="submit">답안 제출</button>
+    <input type="text" id="answer" autofocus required value="=">
+    <button type="submit" id="submit" onclick="showCorrect()">답안 제출</button>
   </div>
   <div class="half-boards">
     <div class="board">
+      <h2>정답 화면</h2>
+      <img id="answerGif" src="../../public/img/answer/BEGINNERAnswer1.gif" width="90%" style="margin: 0; padding: 0; visibility: hidden;">
     </div>
     <div class="board">
+      <h2>엑셀 시트 자료</h2>
+      <img src="../../public/img/sheet/BeginnerSheet1.png" height="60%">
     </div>
   </div>
 </div>
+
 </body>
+<script>
+  function showCorrect() {
+    if(document.getElementById("answer").value === "=DAYS(C3,B3)"){
+      document.getElementById("answerGif").style.visibility = "visible";
+      setTimeout(()=>{ document.getElementById("correct").style.visibility = "visible"; }, 5000);
+    }
+  }
+
+  function closeCorrect() {
+    document.getElementById("answer").value = "=";
+    document.getElementById("correct").style.visibility = "hidden";
+    document.getElementById("answerGif").style.visibility = "hidden";
+  }
+</script>
 </html>
