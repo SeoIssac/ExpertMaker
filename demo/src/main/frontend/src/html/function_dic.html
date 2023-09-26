@@ -7,12 +7,25 @@
 <body id="body">
 
 <!-- 메뉴 -->
-<div id="menu">
-    <nav>
+<div class="menu">
+  <nav>
+
+    <ul>
+      <li><a href="main.html">Main</a></li>
+      <li> <a href="main.html">Question<i class='fa fa-angle-down'></i></a>
         <ul>
-            <li><a href="main.html">메인 화면</a></li>
+          <li><a href="question.html">초급</a></li>
+          <li><a href="question_2.html">중급</a></li>
+          <li><a href="question_3.html">고급</a></li>
+          <li><a href="#">모의고사</a></li>
         </ul>
-    </nav>
+      </li>
+      <li> <a href="function_dic.html">Dictionary</a></li>
+      <li><a href="signup_in.html">Sign Up/Sign In</a></li>
+    </ul>
+
+  </nav>
+
 </div>
 
 <!-- 제목 -->
@@ -149,5 +162,19 @@
 
     </ol>
     </div>
+
+
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+  $('nav li').hover(
+        function() {
+          $('ul', this).stop().slideDown(200);
+        },
+        function() {
+          $('ul', this).stop().slideUp(200);
+        }
+  );
+</script>
+
 </body>
 </html>

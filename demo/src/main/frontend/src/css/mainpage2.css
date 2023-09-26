@@ -31,8 +31,16 @@ a { text-decoration: none;
 
 
 nav { background: #99A98F;
-    justify-content: center;
     display: flex;}
+
+nav > a{
+    font-size: 22px;
+    font-family: 'GmarketSansMedium';
+    margin-top: 17px;
+    justify-content: right;
+    text-align: right;
+
+}
 
 nav ul {
     font-size: 0;
@@ -48,7 +56,7 @@ nav ul li {
 nav ul li a {
     color: white;
     display: block;
-    font-size: 25px;
+    font-size: 22px;
     padding: 15px 14px;
     transition: 0.3s linear;
     font-family: 'GmarketSansMedium';
@@ -59,7 +67,7 @@ nav ul li:hover a {
 }
 
 nav ul li ul {
-    border-bottom: 5px solid #4B504B;
+    border-bottom: 5px solid black;
     display: none;
     position: absolute;
     width: 150px;

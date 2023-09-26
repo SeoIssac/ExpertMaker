@@ -6,36 +6,72 @@
 }
 #body{
     background-color: #FFF8DE;
-    background-size: 1300px 800px;
-    background-position: center center;
+    background-size: 100% auto;
+    background-position: center;
 }
 
-#menu nav {
-    background-color: #FFF8DE;
-    display: flex;
-    justify-content: center;
-    margin: 20px;
+nav { background: #FFF8DE;
+    display: flex;}
+
+nav > a{
+    font-size: 20px;
+    font-family: 'GmarketSansMedium';
+    margin-top: 17px;
+    justify-content: right;
+    text-align: right;
+
 }
-#menu ul {
-    list-style-type: none;
+
+nav ul {
+    font-size: 0;
     margin: 0;
     padding: 0;
-    text-align: center;
 }
-#menu li {
+
+nav ul li {
     display: inline-block;
-    margin-right: 20px;
+    position: relative;
+
 }
-#menu a {
-    text-decoration: none;
+
+nav ul li a {
     color: black;
-    font-size: 25px;
-    font-weight: 700;
+    display: block;
+    font-size: 22px;
+    padding: 15px 14px;
+    transition: 0.3s linear;
+    font-family: 'GmarketSansMedium';
+    text-decoration-line: none;
+}
+
+nav ul li:hover a {
+    color: black;
+}
+
+nav ul li ul {
+    border-bottom: 5px #cccccc;
+    display: none;
+    position: absolute;
+    width: 150px;
+}
+
+nav ul li ul li {
+    border-top: 1px #cccccc;
+    display: block;}
+
+nav ul li ul li:first-child { border-top: none; }
+
+nav ul li ul li a {
+    background: #cccccc;
+    color: black;
+    display: block;
+    padding: 10px 14px;
     font-family: 'GmarketSansMedium';
 }
-#menu a:hover {
-    color: #666;
-}
+
+nav ul li ul li a:hover { background: #FFF8DE; color: black;}
+
+nav .fa.fa-angle-down { margin-left: 6px; }
 
 #title h1{
     font-family: 'GmarketSansMedium';
